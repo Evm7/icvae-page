@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta property="og:title" content="Intention-Conditioned Long-Term Human Egocentric Action Forecasting"/>
+  <meta property="og:url" content="https://evm7.github.io/HOIGaze-page/"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <title>Intention-Conditioned Long-Term Human Egocentric Action Forecasting</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="icon" href="static/figures/icon2.png">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+<section class="publication-header">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <!-- <div class="columns is-centered"> -->
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Intention-Conditioned Long-Term Human Egocentric Action Forecasting</h1>
+          <div class="is-size-3 publication-authors">
+		Winter Conference on Applications of Computer Vision (WACV) 2023
+		Winner of Ego4D Long-Term Anticipation Challenge in CVPR 2022
+		Winner of Ego4D Long-Term Anticipation Challenge in ECCV 2022
+          </div>
+        </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="publication-author-block">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://evm7.github.io/" target="_blank">Esteve Valls Mascaro</a>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=AmvAKdcAAAAJ&hl=en" target="_blank">Hyemin Ahn</a>,</span>
+            <span class="author-block"><a href="https://www.tuwien.at/etit/ict/asl/team/dongheui-lee" target="_blank">Dongheui Lee</a>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Technische Universit ̈at Wien (TUWien), UNIST, DLR</span> 
+            <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+          </div>
+          
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2207.12080" target="_blank"
+                  class="external-link button is-normal is-rounded">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiV</span>
+                </a>
+              </span>
+
+              
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openaccess.thecvf.com/content/WACV2023/html/Mascaro_Intention-Conditioned_Long-Term_Human_Egocentric_Action_Anticipation_WACV_2023_paper.html" target="_blank"
+                  class="external-link button is-normal is-rounded">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              
+            <span class="link-block">
+               <a href="https://github.com/Evm7/ego4dlta-icvae" target="_blank"
+                class="external-link button is-normal is-rounded">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+             </span>
+
+
+
+<!--              <span class="link-block">-->
+<!--                <a href="ADD HERE REPLICATE IF NEEDED" target="_blank"-->
+<!--                class="external-link button is-normal is-rounded">-->
+<!--                <span class="icon">-->
+<!--                  <i class="fas fa-rocket"></i>-->
+<!--                </span>-->
+<!--                <span>Demo</span>-->
+<!--              </a>-->
+<!--              </span>-->
+              <!-- </span> -->
+              <!-- Colab Link. -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <!~~ <div class="hero-body"> ~~>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!~~ <div id="results-carousel" class="carousel results-carousel"> ~~>
+      <div class="container">
+      <div class="item">
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/Motivation.jpg" alt="2CHTR"/>
+      </div>
+
+    </div>
+  </div>
+ <!~~  </div> ~~>
+  </div>
+  </div>
+ <!~~  </div> ~~>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="item">
+          <p style="margin-bottom: 30px">
+ 
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/wacv23.mp4"
+          type="video/mp4">
+        </video>
+<!-- 
+        <iframe width="720" height="405" src=VIDEOLINK TO YOUTUBE IF THERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-->
+        </p>
+        </div>
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+           To anticipate how a person would act in the future, it is essential to understand the human intention since it guides the subject towards a certain action. In this paper, we propose a hierarchical architecture which assumes a sequence of human action (low-level) can be driven from the human intention (high-level). Based on this, we deal with long-term action anticipation task in egocentric videos.  Our framework first extracts this low- and high-level human information over the observed human actions in a video through a Hierarchical Multi-task Multi-Layer Perceptrons Mixer (H3M). Then, we constrain the uncertainty of the future through an Intention-Conditioned Variational Auto-Encoder (I-CVAE) that generates multiple stable predictions of the next actions that the observed human might perform. By leveraging human intention as high-level information, we claim that our model is able to anticipate more time-consistent actions in the long-term, thus improving the results over the baseline in Ego4D dataset. This work results in the state-of-the-art for Long-Term Anticipation (LTA) task in Ego4D by providing more plausible anticipated sequences, improving the anticipation scores of nouns and actions. Our work ranked first in both CVPR@2022 and ECCV@2022 Ego4D LTA Challenge.
+</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/Overview.png" alt="Architecture of our model"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+         <h2 class="title is-3">How does it work?</h2> 
+        <div class="content has-text-justified">
+          <p>
+reextracted features for N observed videos are fed to our Hierarchical Multitask MLP Mixer model (H3M) to obtain low-level action labels and high-level intention. Results are fed into our Intention-Conditioned Variational AutoEncoder (I-CVAE) that anticipates subsequent Z  actions.
+</p>
+        <div class="columns is-centered has-text-centered">
+            <div class="item">
+          <p style="margin-bottom: 30px">
+<!--
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/page.mp4"
+          type="video/mp4">
+        </video>
+ --><br><br>
+        </p>
+        </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="column is-centered has-text-centered">
+         <div class="columns is-centered has-text-centered">
+
+                <div class="column">
+                    <div class="image-container" style="overflow: hidden; justify-content: center; align-items: center;">
+                          	<p><b>Hierarchical Multi-task Multi-Layer Perceptrons Mixer (H3M)</b></p>
+                        <img src="static/figures/Architecture1" alt="H3M">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-container" style="overflow: hidden; justify-content: center; align-items: center;">
+                          	<p><b> Intention-Conditioned Variational Auto-Encoder (I-CVAE)</b></p>
+                        <img src="static/figures/Architecture2" alt="ICVAE">
+                    </div>
+                </div>
+            </div>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+  <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+          <p>
+            The task of long-term action anticipation (LTA) consists on anticipating the future actions of a human given the observation of its past. Our model efficiently exploits the human intention as a condition to increase the confidence of our model for LTA.  Experiments demonstrate that conditioning the model through the human intention has a direct effect when improving realistic anticipation. We tackle this LTA task in the largest egocentric dataset available, Ego4D, and showcase that our approach outperforms state-of-the-art in the Ego4D LTA task, mainly when forecasting nouns and actions. Our work ranked first in both CVPR@2022 and ECCV@2022 Ego4D LTA Challenge.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/QualitativeResults.png" alt="QualitativeResults"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="column is-centered has-text-centered">
+         <div class="columns is-centered has-text-centered">
+
+                <div class="column">
+                    <div class="image-container" style="overflow: hidden; justify-content: center; align-items: center;">
+                          	<p><b>CVPR@2022 Ego4D LTA Challenge Award</b></p>
+                        <img src="static/figures/awards/Award_CVPR22.png" alt="CVPR">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-container" style="overflow: hidden; justify-content: center; align-items: center;">
+                          	<p><b>ECCV@2022 Ego4D LTA Challenge Award</b></p>
+                        <img src="static/figures/awards/Award_ECCV22.png" alt="ECCV">
+                    </div>
+                </div>
+            </div>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+    
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@InProceedings{Mascaro_2023_WACV,
+    author    = {Mascaro, Esteve Valls and Ahn, Hyemin and Lee, Dongheui},
+    title     = {Intention-Conditioned Long-Term Human Egocentric Action Anticipation},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2023},
+    pages     = {6048-6057}
+}
+}</code></pre>
+    </div>
+</section>
+
+
+
+
+<footer class="footer">
+ <!--  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+      <i class="fas fa-file-pdf"></i>
+    </a>
+    <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <i class="fab fa-github"></i>
+    </a>
+  </div> -->
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website is licensed under a <a rel="license"
+          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
+        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+
+  </body>
+  </html>
