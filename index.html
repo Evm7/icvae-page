@@ -127,23 +127,23 @@
 
 
 <section class="hero is-small">
-  <!~~ <div class="hero-body"> ~~>
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!~~ <div id="results-carousel" class="carousel results-carousel"> ~~>
       <div class="container">
       <div class="item">
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/Motivation.jpg" alt="2CHTR"/>
-      </div>
+          <p style="margin-bottom: 30px">
+        	<video poster="" id="tree" autoplay controls muted loop height="100%">
+          	<source src="static/figures/wacv23.mp4"
+          	type="video/mp4">
+        	</video>
+        	</p>
+        </div>
 
     </div>
   </div>
- <!~~  </div> ~~>
   </div>
   </div>
- <!~~  </div> ~~>
 </section>
 
 
@@ -152,23 +152,15 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <div class="item">
-          <p style="margin-bottom: 30px">
- 
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/wacv23.mp4"
-          type="video/mp4">
-        </video>
-<!-- 
-        <iframe width="720" height="405" src=VIDEOLINK TO YOUTUBE IF THERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
--->
-        </p>
-        </div>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
            To anticipate how a person would act in the future, it is essential to understand the human intention since it guides the subject towards a certain action. In this paper, we propose a hierarchical architecture which assumes a sequence of human action (low-level) can be driven from the human intention (high-level). Based on this, we deal with long-term action anticipation task in egocentric videos.  Our framework first extracts this low- and high-level human information over the observed human actions in a video through a Hierarchical Multi-task Multi-Layer Perceptrons Mixer (H3M). Then, we constrain the uncertainty of the future through an Intention-Conditioned Variational Auto-Encoder (I-CVAE) that generates multiple stable predictions of the next actions that the observed human might perform. By leveraging human intention as high-level information, we claim that our model is able to anticipate more time-consistent actions in the long-term, thus improving the results over the baseline in Ego4D dataset. This work results in the state-of-the-art for Long-Term Anticipation (LTA) task in Ego4D by providing more plausible anticipated sequences, improving the anticipation scores of nouns and actions. Our work ranked first in both CVPR@2022 and ECCV@2022 Ego4D LTA Challenge.
-</p>
+		</p>
+      <div class="item">
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/Overview.png" alt="ICVAE"/>
+      </div>
         </div>
       </div>
     </div>
